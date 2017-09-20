@@ -1,0 +1,41 @@
+
+body{
+	margin:0;
+	padding: 0;
+	font-size: normal 100%;
+	background-color:#fae8c8;
+	position: relative;
+	overflow-x: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+	word-wrap:break-word;
+	width: 100%;
+}
+/*返回顶部样式*/
+#gotoTop{
+	position: fixed;
+	display: none;
+	bottom: 0px;
+	right: 90px;
+	background:rgba(1,1,1,.1);
+	padding: 10px;
+	cursor: pointer;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar { width: 12px;}
+
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+	 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	 border-radius: 10px;
+ }
+
+ /* 滚动条滑块 */
+ ::-webkit-scrollbar-thumb {
+ 	 border-radius: 10px; background: rgba(0,0,0,0.1);
+  	 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+ }
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.4);
+}

@@ -1,0 +1,78 @@
+
+.tbanner{
+margin-top: 40px;
+width: 90%;
+min-width: 900px;
+/*-webkit-box-flex:1;
+-moz-box-flex:1;*/
+}
+/* 公共样式*/
+.tbanner>div{
+	width: 100%;
+}
+.tbanner>div>h2{
+	text-align: center;
+	padding:40px;
+	display: block;
+}
+.tbanner>div ul{
+	width: 100%;
+	list-style: none;
+}
+
+.tbanner>div ul li{
+	width: 330px;
+	height: 330px;
+	list-style: none;
+	position: relative;
+	margin:10px;
+	display: inline-block;
+	overflow: hidden;
+}
+.tbanner>div ul li .hover{
+	width:330px; 
+	background:rgba(0, 0 ,0 ,0.5); 
+	position:absolute; top:100px; 
+	left:0; 
+	text-align:center; 
+	color:#fff; 
+	transform:rotate(55deg); 
+	transition:all 0.5s; 
+	overflow:hidden;
+	height:0; 
+	z-index:4000;
+}
+
+
+.tbanner>div ul li h3{
+	color:#fff; 
+	border-bottom:2px solid rgba(255, 255 ,255, 0.5); padding-bottom:10px;}
+
+
+.tbanner>div ul li:hover .hover{
+	height:120px;
+	transform:rotate(0deg); 
+}
+/*before   after为选择器，一般给选择器加动画背景，设置动画样式*/
+.tbanner>div ul li:before{
+	content:"";
+	position:absolute; 
+	top:-300px; right:0;
+	width:500px; height:500px; 
+	background:rgba( 150, 50, 100,0.5); 
+	transform:rotate(55deg) translateX(60px);
+	transform-origin:100% 0%; 
+	transition:all 0.5s ease 0.3s;
+}/*写好样式，进行隐藏，用top:-300px;*/
+
+.tbanner>div ul li:hover:before{ top:0;}
+
+.tbanner>div ul li:after{
+	content:""; position:absolute;bottom:-300px; left:0;width:500px; height:500px; background:rgba( 150, 50, 100,0.5);
+	transform:rotate(55deg) translateX(-60px);
+	transform-origin:0% 100%;
+	transition:all 0.5s ease 0.3s;
+}
+.tbanner>div ul li:hover:after{ bottom:0px;}
+
+

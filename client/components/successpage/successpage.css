@@ -1,0 +1,67 @@
+.successpage{
+	width: 75%;
+	margin:0 auto;
+}
+.successpage>.register_success{
+	width: 100%;
+	margin-bottom: 20px;
+	background: white;
+}
+.successpage>.register_success>.head{
+	text-align: center;
+	padding: 40px;
+	margin: 40px auto;
+	width: 430px;
+}
+.successpage>.register_success>.head>img{
+	float: left;
+	margin:  0 0 0 85px;
+	width: 75px;
+	height: 75px;
+
+}
+.successpage>.register_success>.head>h1{
+	font-size: 28px;
+	font-weight: bold;
+	float: left;
+	margin: 26px 0 0 20px;
+	color: #333333;
+}
+.successpage>.register_success .safe{
+	text-align: center;
+	clear: both;
+    color: #333333;
+    font-size: 12px;
+    margin: 60px 0 0 0;
+   margin-left: 35%;
+    line-height: 30px;
+    height: 30px;
+}
+.successpage>.register_success .safe span{
+	float:left;
+	clear: both;
+}
+.successpage>.register_success .safe a{
+	display: block;
+	width: 150px;
+	height: 30px;
+	background-color: #D41114;
+	color: #fff;
+	line-height: 30px;
+	float: left;
+	margin-left: 20px;
+}
+.successpage>.register_success .delay{
+	// clear: both;
+	color: #333333;
+	font-size: 12px;
+	margin: 20px 0 0 0;
+	display: inline-block;
+	line-height: 30px;
+	height: 30px;
+}
+.successpage>.register_success .delay a{
+	color: #bcbcbc;
+	font-size: 12px;
+	text-decoration: underline;
+}

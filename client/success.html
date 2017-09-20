@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<!-- 引用文件 -->
+	<script src='index_file/jquery.min.js'></script>
+	<link rel="stylesheet" href="index_file/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="index_css/public.css">
+	<link rel="stylesheet" href="components/prehead/prehead.css">
+	<link rel="stylesheet" href="components/mainfoot/mainfoot.css">
+	<link rel="stylesheet" href="components/successpage/successpage.css">
+</head>
+<body>
+	<div id="app">
+		<div id="header">
+			<prehead></prehead>
+		</div>
+		<div id="main" align="center">
+			<successpage></successpage>
+		</div>	
+		<div id="footer">
+			<mainfoot><mainfoot>
+		</div>
+		<!-- 返回顶部小火箭 -->
+		<a href="javascript:void(0)" id="gotoTop" onclick="gotoTop()"><img src="index-img/t-img/goto_top/goto_top.png" alt=""></a>	
+	</div>
+	
+	
+	<!-- preHead模块 -->
+	<template id="prehead">
+		<div class="capital">
+			<div class="header">
+				<a href="">
+					<img src="components/prehead/img/logo.png" alt='图片加载中....'>
+				</a>
+			    <form class="bs-example bs-example-form" role="form">  
+	                <div class="input-group">
+	                    <input type="text" class="form-control" placeholder="请输入菜谱/食材/菜单/作者">
+	                    <span class="input-group-btn">
+	                        <button class="btn btn-default" type="button">搜索</button>
+	                    </span>
+	                </div>
+			    </form>
+				<div class="login_item">
+					<div>
+						<img src="components/prehead/img/qq.png" alt='图片加载中....'>
+						<a>QQ登陆</a>
+					</div>
+					<div>
+						<img src="components/prehead/img/weibo.png" alt='图片加载中....'>
+						<a>微博登陆</a>
+					</div>				
+					<a>注册</a>
+					<a>登录</a>
+				</div>
+				
+			</div>
+			<div class="nav">
+				<ul class="nav  nav-justified">
+					<li><a href="index.html" class="active">首页</a></li>
+					<li class="dropdown normal">
+						<a href="#" class="dropdown-toggle" data-toggle='dropdown'>菜谱大全
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu all_menu">
+							<li v-for='items in menu' >
+								<a href="#" v-for="item in items">{{item}}</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle='dropdown'>饮食健康
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu health_food">
+							<li id="healthfood" v-for='foods in healthfood'>
+								
+								<a href="#" v-for='food in foods'>{{food}}</a>
+							</li>
+						</ul>		
+					</li>
+					<li><a href="#">美食菜单</a></li>
+					<li><a href="#">家居馆</a></li>
+					<li><a href="#">美食达人</a></li>
+					<li><a href="#">讨论组</a></li>
+					<li><a href="#">手机版下载</a></li>
+				</ul>
+			</div>
+		</div>
+	</template>
+
+	
+
+	<!-- successpage模块 -->
+	<template id="successpage">
+		<div class="successpage">
+			<div class="register_success">
+				<div class="head">
+					<img src="components/successpage/img/ok.png" alt="">
+					<h1>注册完成</h1>
+				</div>
+				<p class="safe">
+					<span>为了您的账号安全，请先</span>
+					<a>验证我的登录邮箱</a>
+				</p>
+				<p class="delay">
+					<a href="javascript:void(0)">稍后验证</a>
+				</p>
+			</div>
+		</div>
+	</template>
+
+
+	<!-- mainfoot模块 -->
+	<template id="mainfoot">
+		<div class="mainfoot">
+			<div class="foot_top">
+				<div class="count">
+					<img src="components/mainfoot/img/logo_f.png" alt='图片加载中....'>
+					<div class="total">
+						<div>
+							<p v-for='count in data[0]'>{{count}}</p>	
+						</div>
+						<div>
+							<p  v-for='num in data[1]'>{{num}}</p>
+						</div>
+					</div>
+					<span v-text='data[2][0]'></span>
+				</div>
+				<ul class="foot_r">
+					<li>
+						<a href="" v-for='items in icon'>
+							<img  :src="items.image" alt='图片加载中....'>
+							<span>{{items.icon1}}</span><br>
+							<span>{{items.icon2}}</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="foot_bottom">
+				<dl class="friend_link">
+					<dt>友情链接</dt>
+					<dd v-for='link in links' :title="link">
+						<a href="">{{link}}</a>
+					</dd>
+				</dl>
+				<br>
+				<ul class="business">
+					<li v-for='work in business'>
+						<a href="" title='work'>{{work}}</a>
+					</li>
+				</ul>
+				<p>京ICP证150335号/京公网安备11010802009977 Copyright © 2003-2017 MEISHIJ CO.,LTD.</p>
+			</div>
+		</div>
+	</template>
+
+	
+		
+	<!-- 引入vue全家桶 -->
+	<script src='index_file/vue.js'></script>
+	<script src='index_file/vuex.js'></script>
+	<script src='index_file/vue-resource.js'></script>
+
+	<!-- 引入相关组件 -->
+	<script src='index_file/bootstrap/js/bootstrap.min.js'></script>
+
+	<script src='index_js/lazyload.js'></script>	
+	<script src='index_js/goto_top.js'></script>
+	<script src='components/successpage/successpage.js'></script>
+	<script src='components/prehead/prehead.js'></script>
+	<script src='components/mainfoot/mainfoot.js'></script>	
+	<script src='store/store.js'></script>
+	<script>
+		new Vue({
+			el:'#app',
+			store:store
+		})
+	</script>
+</body>
+</html>

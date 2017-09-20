@@ -1,0 +1,188 @@
+
+/*头部样式*/
+.header{
+	width: 100%;
+	height:129px;
+	position: relative;
+	margin:0px auto;
+	vertical-align: baseline;
+	background:#c90000;
+	display:-webkit-box; 
+	-webkit-box-pack:center;
+}
+.header a,.header form,.header .login_item{
+	height:100%;
+	margin-left: 40px;
+	
+}
+.header form {
+	width: 420px;
+	height: 60px;
+	margin-top: 40px;	
+}
+.header form div{
+	border:2px solid #fff;
+	border-radius: 4px;
+}
+.header form button{
+	width: 80px;
+	background:#c90000;
+	color:white;
+	
+}
+.header form button:hover{
+	background: #a8000f;
+}
+.header .login_item{
+	margin-top: 40px;
+	display: inline-block;
+	
+	vertical-align: top;
+
+}
+.header .login_item div{
+	height: 28px;
+	line-height: 28px;
+	display: inline-block;
+	margin-right: 5px;
+	 padding: 0px 5px;
+	 border-radius: 4px;
+}
+.header .login_item div a{
+	margin-left: 0px;
+
+}
+.header .login_item a{
+	height: 28px;
+	line-height: 28px;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 4px;
+	margin-left: 5px;
+	 padding: 5px 5px;
+}
+
+.header .login_item div:hover,.header .login_item>a:hover{
+	background:rgba(0,0,0,.3);
+
+}
+.header .login_item>a.user_info{
+	padding: 10px;
+	position: relative;
+}
+.header .login_item a.user_info:hover{
+	text-decoration:none;
+}
+.header .login_item .login_out{
+	margin-top: 0px;
+	color:black;
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+	background: #ddd;
+	font-weight: bold;
+}
+.header .login_item .login_out:hover{
+	color:red;
+	text-decoration: none;
+}
+
+
+
+/*导航条样式*/
+.nav{
+	height: 70px;
+	width: 100%;
+	min-width: 1000px;
+	background:#fff;
+	display:-webkit-box; 
+	-webkit-box-pack:center;
+	vertical-align: top;
+	z-index: 2000;
+}
+.nav>ul{
+	width:70%;
+}
+.nav>ul>li{
+	margin-right: 5px;
+	height: 70px;
+	line-height: 70px;
+}
+.nav>ul>li:nth-child(6){
+	background: url(img/meishi.png) right 4px top 5px no-repeat;
+	/*position: absolute;*/
+	z-index: 20;
+}
+.nav>ul>li>a{
+	padding:0px 10px;
+	height: 100%;
+	font-size: 1.3em;
+	color:#444;
+	font-weight: bold;	
+	font-family: Microsoft Yahei,'黑体';
+}
+.nav>ul li a:hover{
+	background: rgba(1,1,1,.1);
+}
+
+
+
+/*下拉菜单样式*/
+.all_menu{
+	float:left;
+	background:#f4f4f4;
+	width: 800%;
+	transform:translateX(-100px);
+}
+.all_menu>li{
+		line-height: 40px;
+}
+.all_menu li:not(:first-child){
+	width: 50%;
+	float:left;
+}
+.all_menu li a:nth-child(1){
+	font-size: 18px;
+	color:red;
+	display: block;
+}
+.all_menu li a{
+	font-size: 12px;
+	background: 0px;
+	display: inline-block;
+	padding: 0px 10px;
+	color:#666;
+}
+.all_menu li a:not(:first-child):hover{
+	color:white;
+	background:#e00;
+}
+.health_food{
+	float:left;
+	background:#f4f4f4;
+	width: 800%;
+	transform:translateX(-240px);
+}
+.health_food li{
+	line-height: 40px;
+}
+.health_food li:nth-child(3),.health_food li:nth-child(4){
+	width: 40%;
+	float:left;
+}
+.health_food li a:nth-child(1){
+	font-size: 18px;
+	color:red;
+	display: block;
+}
+.health_food li a{
+	font-size: 12px;
+	background: 0px;
+	display: inline-block;
+	padding: 0px 10px;
+	color:#666;
+}
+.health_food li a:not(:first-child):hover{
+	color:white;
+	background:#e00;
+}

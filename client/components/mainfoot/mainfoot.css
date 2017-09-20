@@ -1,0 +1,136 @@
+.mainfoot{
+		background:rgba(0,0,0,.8);
+		width: 100%;
+		height: 450px;
+		margin-top: 40px;
+}
+.foot_top{
+	width: 100%;
+	height: 200px;
+	/*padding-bottom: 60px;*/
+	display:-webkit-box; 
+	-webkit-box-pack:center;
+}
+
+/*底部左边样式*/
+.foot_top .count{
+	margin-top: 10px;
+	width: 30%;
+	color:white;
+}
+.foot_top .count .total{
+	width: 100%;
+	display: flex;
+
+}
+.foot_top .count .total div:last-child{
+	margin-left: 10px;
+	color:red;
+	font-size: 17px;
+	transform: translateY(-4px);
+	font-weight: bold;
+}
+.foot_top .count .total div:last-child p{
+	margin:2px;
+
+}
+
+
+/*底部右边样式*/
+.foot_top .foot_r{
+	width: 45%;
+	height: 200px;
+	text-decoration: none;
+}
+.foot_top .foot_r>li {
+	width: 24%;
+	text-decoration: none;
+	display: flex;
+
+}
+.foot_top .foot_r a{
+	padding:30px 10px;  
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+.foot_top .foot_r a>img{
+	margin-bottom: 5px;
+}
+.foot_top .foot_r a>span{
+	width: 100%;
+	color:#999;
+	font-size: 12px;
+}
+.foot_top .foot_r a:hover span{
+	color:white;
+}
+
+
+
+/*友情链接部分*/
+.foot_bottom{
+	width: 100%;
+	padding:0 170px;	
+	 
+}
+.foot_bottom .friend_link{
+	padding:10px 0px;
+
+}
+.foot_bottom .friend_link dt{
+	color: white;
+	border-bottom: 1px solid #444;
+	line-height: 40px;
+	float: left;
+	display: block;
+	width: 100%;
+	margin-bottom: 8px;
+	font-size: 1em;
+}
+.foot_bottom .friend_link dd{
+	display:-webkit-box; 
+	-webkit-box-pack:center;
+	color:#999;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	width:99px;
+}
+.foot_bottom .friend_link dd a{
+	color:#999;
+	font-size: 12px;
+}
+.foot_bottom .friend_link dd a:hover{
+	color: #f11;
+}
+.foot_bottom .business{
+	border-top: 1px solid #444;
+	width: 100%;
+	margin:0 auto;
+	text-align:center;
+	padding:10px 0px 0px 0px;
+	margin-top: 80px;
+}
+.foot_bottom .business li{
+	display: inline-block;
+}
+.foot_bottom .business li a{
+	display: inline-block;
+	color: #999;
+	padding: 0 10px;
+	line-height: 24px;
+	height: 24px;
+	text-decoration: none;
+	font-size: 12px;
+}
+.foot_bottom .business li a:hover{
+	background:#f11;
+	color:white;
+}
+.foot_bottom p{
+	color: #666;
+	text-align: center;
+	margin-top: 5px;
+	font-size: 12px;
+}
